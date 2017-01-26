@@ -1,6 +1,7 @@
 package com.dylandelobel.spaceshooter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +22,7 @@ public class MainActivity extends Activity {
     }
 
     public void onPlayButtonClicked(View v) {
-        Toast.makeText(getApplicationContext(), "Hello man!!!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(MainActivity.this, GameScene.class);
     }
 
 
